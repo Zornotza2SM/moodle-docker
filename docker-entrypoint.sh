@@ -4,7 +4,7 @@ set -e
 
 : ${MOODLE_SITE_FULLNAME:=Moodle}
 : ${MOODLE_SITE_SHORTNAME:=Moodle}
-: ${MOODLE_SITE_LANG:=en}
+: ${MOODLE_SITE_LANG:=es}
 : ${MOODLE_ADMIN_USER:=admin}
 : ${MOODLE_ADMIN_PASS:=password}
 : ${MOODLE_ADMIN_EMAIL:=admin@example.com}
