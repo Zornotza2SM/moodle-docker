@@ -31,8 +31,6 @@ services:
     environment:
       - MOODLE_DB_TYPE=mariadb
       - MOODLE_DB_HOST=db
-      - PUID=1000 # El ID de usuario del host que debe tener acceso
-      - PGID=1000 # El ID de grupo del host que debe tener acceso
       #- MOODLE_DB_PORT=
       - MOODLE_DB_NAME=moodle
       - MOODLE_DB_USER=moodle
