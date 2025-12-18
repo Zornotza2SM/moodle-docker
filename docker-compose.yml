@@ -64,3 +64,12 @@ services:
       - ./.data/redis:/data
     ports:
       - 6379:6379
+      
+  portainer:
+    image: portainer/portainer-ce:latest
+    restart: always
+    ports:
+      - "9443:9443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
