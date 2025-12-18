@@ -1,5 +1,7 @@
 # Entorno Docker para Moodle
 
+![alt text](image-1.png)
+
 Este proyecto proporciona un entorno de desarrollo local basado en Docker para Moodle. Incluye Moodle, una base de datos MariaDB y un servidor Redis para el almacenamiento en caché.
 
 ## Prerrequisitos
