@@ -122,6 +122,8 @@ fi
 # Asegura que el usuario de PHP (www-data) pueda escribir en el volumen
 echo "Fixing permissions for $MOODLE_SHARED..."
 chown -R www-data:www-data $MOODLE_SHARED
+# PASO 2: Asegurar que el usuario y grupo de Moodle tengan permiso de escritura.
+chmod -R 775 $MOODLE_SHARED
 # ------------------------------------------------------------------
 #mkdir -p "$MOODLE_SHARED/images"
 #
