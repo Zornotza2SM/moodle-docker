@@ -29,7 +29,6 @@ services:
       # do not uncomment this when starting a new instance from scratch as
       # init script won't be able to move this file
       #- ./LocalSettings.php:/var/www/html/LocalSettings.php
-    user: "1000:1000" # Reemplace 1000:1000 con su UID:GID de host
     environment:
       - MOODLE_DB_TYPE=mariadb
       - MOODLE_DB_HOST=db
@@ -60,8 +59,7 @@ services:
       #- SMTP_SECURITY=ssl
       #- SMTP_AUTH_TYPE=PLAIN
       #- MOODLE_NOREPLY_ADDRESS=test@example.com
-
-
+      
   redis:
     image: redis:5.0-alpine
     volumes:

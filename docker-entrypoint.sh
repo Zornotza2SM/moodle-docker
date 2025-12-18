@@ -116,6 +116,13 @@ if [ ! -d "$MOODLE_SHARED" ]; then
     echo "Created $MOODLE_SHARED directory."
     mkdir -p $MOODLE_SHARED
 fi
+
+# ------------------------------------------------------------------
+# AÑADIDO PARA SOLUCIONAR EL ERROR DE PERMISOS (dataroot is not writable)
+# Asegura que el usuario de PHP (www-data) pueda escribir en el volumen
+echo "Fixing permissions for $MOODLE_SHARED..."
+chown -R www-data:www-data $MOODLE_SHARED
+# ------------------------------------------------------------------
 #mkdir -p "$MOODLE_SHARED/images"
 #
 ## If the images directory only contains a README, then link it to
