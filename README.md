@@ -15,7 +15,7 @@ Asegúrate de tener instalados los siguientes programas en tu sistema:
 
     ```bash
     git clone <URL_DEL_REPOSITORIO>
-    cd B1-moodle-docker
+    cd moodle-docker
     ```
 
 2.  **Levanta los contenedores:**
